@@ -7,13 +7,18 @@ plugins {
 	kotlin("jvm") version "1.7.22"
 	kotlin("plugin.spring") version "1.7.22"
 	kotlin("plugin.jpa") version "1.7.22"
-	id ("jacoco")
-	id ("org.sonarqube") version "3.5.0.2730"
+	id("jacoco")
+	id("org.sonarqube") version "3.5.0.2730"
+	id("application")
 }
 
 group = "ar.edu.unq.desapp.grupo-i-202301"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
+
+application {
+	mainClassName = "BackendDesappApiApplication" // Reemplaza con el nombre de tu clase principal
+}
 
 repositories {
 	mavenCentral()
