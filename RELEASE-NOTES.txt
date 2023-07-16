@@ -1,0 +1,99 @@
+---------------------------------------------------------------------
+ENTREGA 1 TAG 1.0
+---------------------------------------------------------------------
+NEW FEATURES:
+* Add Builders(CryptoBuilder, TradeBuilder, TransactionBuilder and UserBuilder to model).
+* Add Crypto to model.
+* Add CryptoOperated to model.
+* Add CryptoVolume to model.
+* Add Enumerators(CryptoName, OperationType and ActionTransaction) to model.
+* Add Intention to model.
+* Add Trade to model.
+* Add Transaction to model.
+* Add User to model.
+* Add UserDAO to persistence.
+* Add UserDTO to RESTWebService.
+* Add UserCreateDTO to REST Web Service.
+* Add SecurityFilterChain to REST Web Service(allows interacting with the api without authenticating).
+* Add ErrorDTO and ErrorResponseDTO to REST Web Service(allow see errors in a correct way).
+* Add ExceptionHandler to REST Web Service(handles the response status).
+* Add UserController to REST Web Service(only users can register).
+* GitHub repository has been created.
+* GitHubActions is configured and connected. Running successfully.
+* Swagger has been configured and works for /users/register POST method. Running successfully.
+* SonarCloud is configured and connected. Running successfully.
+* Unit tests were implemented on Model and Service.
+
+NOTES:
+* Deploy on railway.app
+* Tests to CryptoTest, TransactionTest, TradeTest and UserTest(some attributes are missing to be tested).
+* Tests to CryptoOperated, CryptoVolume and Intention.
+
+
+---------------------------------------------------------------------
+ENTREGA 2 TAG 2.0
+---------------------------------------------------------------------
+
+NEW FEATURES:
+* Added BinanceResponse to the REST Web Service external api.
+* Added DolarResponse to the REST Web Service external api.
+* Added BinanceService to the REST Web Service external api.
+* Added DolarService to the REST Web Service external api.
+* Added UserCreateDTO to REST Web Service.
+* Added UserResponseDTO to REST Web Service.
+* Added PriceDTO to REST Web Service.
+* Added TradeActiveDTO to REST Web Service.
+* Added TradeCreate to REST Web Service.
+* Added TradeResponseDTO to REST Web Service.
+* Added TransactionCreateDTO to REST Web Service.
+* Added TransactionRequestDTO to REST Web Service.
+* Added TransactionResponseDTO to REST Web Service.
+* Added VolumenOperatedResponseDTO to REST Web Service.
+* Added VolumenOperatedRequestDTO to REST Web Service.
+* Added TransactionController to REST Web Service.
+* Added TradeController to REST Web Service.
+* Added CryptoController to REST Web Service.
+* Added VolumeOperatedController to REST Web Service.
+* Swagger has been update for UserController
+* Swagger has been update for CryptoController
+* Swagger has been update for TradeController
+* Swagger has been update for TransactionController
+* Swagger has been update for VolumeOperatedController
+* Added aspects for the insertion of data.
+* Added Mockito to test api Binance.
+* Added Mockito to test api DolarSi.
+* GitHubActions is running successfully.
+* SonarCloud is running successfully.
+* Added functionality for listing crypto-asset quotes.
+* Functionality was added to allow a user to express their intent to buy/sell.
+* Added functionality to build a list showing active buying/selling intentions.
+* Added functionality to process the transaction reported by a user.
+
+NOTES:
+* Report to the user the traded volume of crypto-assets between two dates
+* Integral testing of 2 controllers (end-to-end)
+
+---------------------------------------------------------------------
+ENTREGA 3 TAG 3.0
+---------------------------------------------------------------------
+
+NEW FEATURES:
+* Added Quote to the Model.
+* Added Quote24hs to the Model.
+* Added QuoteBuilder to the Model.
+* Added Quote24Builder to the Model.
+* Added QuotePersistence to the Persistence.
+* Added Quote24hsPersistence to the Persistence.
+* Added AuthController to REST Web Service.
+* Added QuoteController to REST Web Service.
+* Added LoginDTO to REST Web Service.
+* Added security functionality for API access (JWT)
+* Added functionality to display the last 24hs quotes for a given crypto active.
+* Cache("cryptoGetPrices") is implemented when quotes are obtained.
+* Add Logger for execution time of '/cryptos/prices' using Log4j/logback
+* Add Logger for execution time of '/quotes/quoteList' using Log4j/logback
+* Architecture test is created
+* End-to-end tests were implemented
+* Added functionality to report the user of the traded volume of crypto-assets between two dates.
+* GitHubActions is running successfully.
+* SonarCloud is running successfully.
